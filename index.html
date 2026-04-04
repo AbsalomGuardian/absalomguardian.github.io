@@ -29,7 +29,7 @@
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:absalom.ranelletti@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="">CV</a> (Coming Soon) &nbsp;/&nbsp;
+                  <a href="https://drive.google.com/file/d/14lXR-MdKr1m6AwfrVT8xeNllFZivZDMn/view?usp=sharing">CV</a>&nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/absalom-ranelletti-991299302/">Linkedin</a> &nbsp;/&nbsp;
                   <a href="https://github.com/AbsalomGuardian">Github</a>
                 </p>
@@ -59,75 +59,76 @@
         <!--content-->
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-<tr onmouseout="ever_stop()" onmouseover="ever_start()" bgcolor="#ffffd0">
+    <!--chat-->
+    <tr onmouseout="chat_stop()" onmouseover="chat_start()" bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='ever_image'>
-					  <img src='images/HO5A.JPG' width=175%>
+          <div class="two" id='chat_image'>
+					  <img src='images/wireshark.JPG' width=150%>
 					</div>
-          <img src='images/HO5B.JPG' width=125%>
+          <img src='images/ChatDemonstration.JPG' width=150%>
         </div>
         <script type="text/javascript">
-          function ever_start() {
-            document.getElementById('ever_image').style.opacity = "1";
+          function chat_start() {
+            document.getElementById('chat_image').style.opacity = "1";
           }
 
-          function ever_stop() {
-            document.getElementById('ever_image').style.opacity = "0";
+          function chat_stop() {
+            document.getElementById('chat_image').style.opacity = "0";
           }
-          ever_stop()
-        </script>
-    
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href=""> <!--link to report-->
-          <span class="papertitle">Machine Learning Final Project</span>
-        </a>
-        <br>
-        <em>Machine Learning Basics</em>, Winter 2025
-        <br>
-        <a href="https://github.com/AbsalomGuardian/RanellettiHO5">Code</a>
-        /
-        <a href="https://github.com/AbsalomGuardian/RanellettiHO5/blob/main/RanellettiHO5Report.pdf">Report</a>
-        <p></p>
-        <p>
-      As a final project for a machine learning class, I had to clean synthetic data while not knowing anything about the domain and having to come up with my own ideas on how to process it. Then I trained three different classifier models, one logistic regression, one k-nearest neighbors, and one decision tree on that data. This project includes a report going over my methodology and results.
-        </p>
-      </td>
-    </tr>
-
-<!--Chess Engine-->
-    <tr onmouseout="chess_stop()" onmouseover="chess_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='chess_image'>
-					  <img src='images/moveEval.JPG' width=125%>
-					</div>
-          <img src='images/chessBoard.JPG' width=100%>
-        </div>
-        <script type="text/javascript">
-          function chess_start() {
-            document.getElementById('chess_image').style.opacity = "1";
-          }
-
-          function chess_stop() {
-            document.getElementById('chess_image').style.opacity = "0";
-          }
-          chess_stop()
+          chat_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://github.com/AbsalomGuardian/chess-engine/tree/negamax">
-			<span class="papertitle">Chess Engine and AI
+        <a href="https://github.com/AbsalomGuardian/ChatProgram">
+			<span class="papertitle">Chat Program
       </span>
         </a>
 
 				<br>
-        <em> Advanced Programming</em>, Fall 2026
+        <em> Introduction to Computer Networking</em>, Winter 2026
         <br>
         <p>
-      An entire quarter of iterative projects, which included Tic-Tac-Toe and Connect4 engines and AI (not included in linked build) eventually led to this chess engine and negamax-based chess AI. Optimization was achieved using occupancy bitboards and various bit operations. The class also involved learning how to use the ImGui library; abstracting game concepts and class polymorphism; and working on adding to an existing code base. 
+        A group project with Joshua Lazaritt and me for my Introduction to Computer Networking class. It consits of a server that facilitates a peer-to-peer connection between two instances of the client program, who can then exchange messages.
         </p>
+        <p>
+        This system is based on TCP connections and python socket programming. The application layer protocol was our own protocol called "SimpleChat". Based on user commands, a client instance will connect to the server and log its details. If the server had other details to give, it would and the client would then begin a peer-to-peer connection with the other client. Otherwise it would wait for the client to contact it. Once a peer-to-peer connection was established, they could send messages to eachother through the command line interface, alternating who is sending and reading. 
+        </p>
+      </td>
+    </tr>
+
+    <!--SDN-->
+    <tr onmouseout="sdn_stop()" onmouseover="sdn_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='sdn_image'>
+					  <img src='images/controllerExample.JPG' width=150%>
+					</div>
+          <img src='images/TopoBlank.JPG' width=120%>
+        </div>
+        <script type="text/javascript">
+          function sdn_start() {
+            document.getElementById('sdn_image').style.opacity = "1";
+          }
+
+          function sdn_stop() {
+            document.getElementById('sdn_image').style.opacity = "0";
+          }
+          sdn_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://github.com/AbsalomGuardian/SDNExamples">
+			<span class="papertitle">Software Defined Networking Controllers
+      </span>
+        </a>
+
+				<br>
+        <em> Introduction to Computer Networking</em>, Winter 2026
+        <br>
+        <p>Two labs from my Introduction to Computer Networking class. The topology scripts create an emulated network in mininet, while the controller scripts impliment specified forwarding rules using Openflow through the POX library (must be provided).</p>
+
+        <p>Both labs involved blocking specific types of traffic to and from different sources. Both labs print to console when traffic is blocked and why. Lab 6 is a more complex version of Lab 5, and includes having to dynamically determine routing tables based on the subnet, as well as figure out what the subnet of a specific router is based only on the traffic observed.</p>
       </td>
     </tr>
 
@@ -234,6 +235,80 @@
       Combining the HTTP server and multi-threared program assignments, this multi-threaded server has the same PUT and GET functionality, but each request is serviced by a separate thread. The reader-writer lock is used to maintain the coherency of requests to a shared bank of .txt file resources. 
       </td>
     </tr>
+<!--machine learning-->
+<tr onmouseout="ever_stop()" onmouseover="ever_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ever_image'>
+					  <img src='images/HO5A.JPG' width=175%>
+					</div>
+          <img src='images/HO5B.JPG' width=125%>
+        </div>
+        <script type="text/javascript">
+          function ever_start() {
+            document.getElementById('ever_image').style.opacity = "1";
+          }
+
+          function ever_stop() {
+            document.getElementById('ever_image').style.opacity = "0";
+          }
+          ever_stop()
+        </script>
+    
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href=""> <!--link to report-->
+          <span class="papertitle">Machine Learning Final Project</span>
+        </a>
+        <br>
+        <em>Machine Learning Basics</em>, Winter 2025
+        <br>
+        <a href="https://github.com/AbsalomGuardian/RanellettiHO5">Code</a>
+        /
+        <a href="https://github.com/AbsalomGuardian/RanellettiHO5/blob/main/RanellettiHO5Report.pdf">Report</a>
+        <p></p>
+        <p>
+      As a final project for a machine learning class, I had to clean synthetic data while not knowing anything about the domain and having to come up with my own ideas on how to process it. Then I trained three different classifier models, one logistic regression, one k-nearest neighbors, and one decision tree on that data. This project includes a report going over my methodology and results.
+        </p>
+      </td>
+    </tr>
+
+<!--Chess Engine-->
+    <tr onmouseout="chess_stop()" onmouseover="chess_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='chess_image'>
+					  <img src='images/moveEval.JPG' width=125%>
+					</div>
+          <img src='images/chessBoard.JPG' width=100%>
+        </div>
+        <script type="text/javascript">
+          function chess_start() {
+            document.getElementById('chess_image').style.opacity = "1";
+          }
+
+          function chess_stop() {
+            document.getElementById('chess_image').style.opacity = "0";
+          }
+          chess_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://github.com/AbsalomGuardian/chess-engine/tree/negamax">
+			<span class="papertitle">Chess Engine and AI
+      </span>
+        </a>
+
+				<br>
+        <em> Advanced Programming</em>, Fall 2026
+        <br>
+        <p>
+      An entire quarter of iterative projects, which included Tic-Tac-Toe and Connect4 engines and AI (not included in linked build) eventually led to this chess engine and negamax-based chess AI. Optimization was achieved using occupancy bitboards and various bit operations. The class also involved learning how to use the ImGui library; abstracting game concepts and class polymorphism; and working on adding to an existing code base. 
+        </p>
+      </td>
+    </tr>
+
+
   <!--tic-tac-toe-->
     <tr onmouseout="ever2_stop()" onmouseover="ever2_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
@@ -308,7 +383,7 @@
       </td>
     </tr>
 
-
+<!--pa4-->
     <tr onmouseout="pa4_stop()" onmouseover="pa4_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
